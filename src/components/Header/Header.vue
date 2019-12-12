@@ -1,12 +1,16 @@
 <template>
   <div class="header">
-    <app-logo></app-logo>
-    This is Header
+    <div class="logo-wrapper">
+      <div>HB</div>
+      <app-logo></app-logo>
+    </div>
+    <div class="current-date">This is Header</div>
+    <div class="toggle-switch">Toggle Switch</div>
   </div>
 </template>
 
 <script>
-import Logo from '@/components/UI/icons/Logo/Logo.vue';
+import Logo from '@/assets/icons/logo.svg';
 
 export default {
   components: {
@@ -21,9 +25,24 @@ export default {
   .header {
     width: 100%;
     height: 80px;
+    padding: 10px;
+    box-sizing: border-box;
     color: $header-font-color;
     font-size: 1.25rem;
     text-transform: uppercase;
     box-shadow:  0px 10px 12px -3px $shadow-color;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo-wrapper {
+      display: flex;
+      align-items: center;
+
+      .logo__icon {
+        height: 2rem;
+        margin-left: 1rem;
+      }
+    }
   }
 </style>

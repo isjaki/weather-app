@@ -1,7 +1,45 @@
+/* colors */
 $main-light-color: #fff;
 $shadow-color: #e7e9ff;
 $header-font-color: #221C48;
 $main-font-color: #020202;
+
+/* breakpoints */
+@mixin for-extra-small {
+  @media screen and (max-width: 599px) {
+    @content;
+  }
+}
+
+@mixin for-small-up  {
+  @media screen and (min-width: 600px) {
+    @content;
+  }
+}
+
+@mixin for-medium-up {
+  @media screen and (min-width: 960px) {
+    @content;
+  }
+}
+
+@mixin for-large-up {
+  @media screen and (min-width: 1264px) {
+    @content;
+  }
+}
+
+@mixin for-extra-large-up {
+  @media screen and (min-width: 1904px) {
+    @content;
+  }
+}
+
+@mixin for-custom-up($size) {
+  @media screen and (min-width: $size) {
+    @content;
+  }
+}
 
 body {
   margin: 0;
