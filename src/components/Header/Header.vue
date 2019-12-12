@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import Logo from '../UI/icons/Logo/Logo.vue';
+import Logo from '@/components/UI/icons/Logo/Logo.vue';
 
 export default {
   components: {
@@ -16,7 +16,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  @import '../../index.scss';
+  @import '@/index.scss';
 
   .header {
     width: 100%;
