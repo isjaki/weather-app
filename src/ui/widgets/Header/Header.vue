@@ -2,7 +2,7 @@
   <div class="header">
     <div class="logo-wrapper">
       <div>HB</div>
-      <app-logo></app-logo>
+      <logo-icon></logo-icon>
     </div>
     <div class="current-date">Today</div>
     <div class="toggle-switch">Toggle Switch</div>
@@ -10,11 +10,11 @@
 </template>
 
 <script>
-import Logo from '@/ui/components/icons/LogoIcon/LogoIcon.vue';
+import LogoIcon from '@/ui/components/icons/LogoIcon/LogoIcon.vue';
 
 export default {
   components: {
-    appLogo: Logo,
+    LogoIcon,
   },
 };
 </script>
