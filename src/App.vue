@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import Header from './components/Header/Header.vue';
+import Header from '@/ui/widgets/Header/Header.vue';
 
 export default {
   components: {
@@ -15,7 +15,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import './index.scss';
+@import '@/index.scss';
 
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;

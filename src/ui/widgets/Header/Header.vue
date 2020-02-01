@@ -4,13 +4,13 @@
       <div>HB</div>
       <app-logo></app-logo>
     </div>
-    <div class="current-date">This is Header</div>
+    <div class="current-date">Today</div>
     <div class="toggle-switch">Toggle Switch</div>
   </div>
 </template>
 
 <script>
-import Logo from '@/assets/icons/logo.svg';
+import Logo from '@/ui/components/icons/LogoIcon/LogoIcon.vue';
 
 export default {
   components: {
