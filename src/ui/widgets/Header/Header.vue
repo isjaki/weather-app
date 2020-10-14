@@ -1,23 +1,15 @@
 <template>
   <div class="header">
     <div class="logo-wrapper">
-      <div>HB</div>
+      <div>HB</div> <!-- here will be a hamburger button -->
       <logo-icon></logo-icon>
     </div>
-    <div class="current-date">Today</div>
-    <div class="toggle-switch">Toggle Switch</div>
+    <div class="current-date">Today</div> <!-- here the current date will be displayed -->
+    <div class="toggle-switch">Toggle Switch</div> <!-- here will be a switch button -->
   </div>
 </template>
 
-<script>
-import LogoIcon from '@/ui/components/icons/LogoIcon/LogoIcon.vue';
-
-export default {
-  components: {
-    LogoIcon,
-  },
-};
-</script>
+<script></script>
 
 <style lang="scss" scoped>
   @import '@/index.scss';
@@ -43,6 +35,10 @@ export default {
         height: 2rem;
         margin-left: 1rem;
       }
+    }
+
+    .current-date {
+      font-weight: bold;
     }
   }
 </style>
