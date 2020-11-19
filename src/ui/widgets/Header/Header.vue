@@ -1,15 +1,28 @@
 <template>
   <div class="header">
+    <!-- <div></div> -->
     <div class="logo-wrapper">
-      <div>HB</div> <!-- here will be a hamburger button -->
+      <hamburger-button></hamburger-button>
       <logo-icon></logo-icon>
     </div>
     <div class="current-date">Today</div> <!-- here the current date will be displayed -->
-    <div class="toggle-switch">Toggle Switch</div> <!-- here will be a switch button -->
+    <div class="toggle-switch">
+      <toggle-switch></toggle-switch>
+    </div> <!-- here will be a switch button -->
   </div>
 </template>
 
-<script></script>
+<script>
+import ToggleSwitch from '@/ui/components/buttons/ToggleSwitch/ToggleSwitch.vue';
+import HamburgerButton from '@/ui/components/buttons/HamburgerButton/HamburgerButton.vue';
+
+export default {
+  components: {
+    ToggleSwitch,
+    HamburgerButton,
+  },
+};
+</script>
 
 <style lang="scss" scoped>
   @import '@/index.scss';
