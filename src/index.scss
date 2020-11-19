@@ -3,6 +3,7 @@ $main-light-color: #fff;
 $shadow-color: #e7e9ff;
 $header-font-color: #221C48;
 $main-font-color: #020202;
+$hamburger-btn-color: #432C85;
 
 /* breakpoints */
 @mixin for-extra-small {
@@ -41,6 +42,13 @@ $main-font-color: #020202;
   }
 }
 
+html {
+  width: 100%;
+  height: 100%;
+}
+
 body {
   margin: 0;
+  width: 100%;
+  height: 100%;
 }
